@@ -1,4 +1,5 @@
-# 简单学习了一下slim框架restful的用法。slim比较小，懒得配.ignore直接源码上传了。免composer安装
+### 简单学习了一下slim框架restful的用法。
+slim比较小，懒得配.ignore直接源码上传了。免composer安装
 ```
 git clone https://github.com/moxiaonai/simpleSlim.git
 ```
@@ -20,12 +21,11 @@ INSERT INTO `employee` (`employee_id`, `emp_name`, `emp_contact`, `emp_role`) VA
 ```
 ___
 如果是php启动服务
-cd simpleSlim/src && php -s localhost:7777
+`cd simpleSlim/src && php -s localhost:7777`
 ___
 
-如果你使用的是apache httpd 应用服务器，请在simpleSlim目录下创建 .htaccess， 写入
+如果你使用的是`apache httpd `应用服务器，请在`simpleSlim`目录下创建 `.htaccess`， 写入
 ```
-[plain] view plain copy
 RewriteEngine on  
 RewriteCond %{REQUEST_FILENAME} !-d  
 RewriteCond %{REQUEST_FILENAME} !-f  
@@ -38,4 +38,4 @@ RewriteRule . index.php [L]
     ServerName 127.0.0.1
 </VirtualHost>
 ```
-访问http://127.0.0.1/dboper.php就能看到效果
+访问 http://127.0.0.1/dboper.php 就能看到效果
